@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+}
+.para{
+  border-style:double;
+border-color:#CE52FB;
+ color:#AA336A;
+  
+}
+
+body {
+  margin: 0;
+  background-image: linear-gradient(pink, #AA336A);
+   font-family: "Times New Roman", Times, serif;
+
+}
+
+.header {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 32px;
+  background-color: #AA336A;
+  color: #fff;
+  border-bottom: 4px solid purple;
+ 
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px 10px;
+  
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 350px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.gallery::after {
+  content: "";
+  width: 350px;
+}
+img:hover{
+transform:scale(1.2);
+}
+.photo{
+  text-align:center;
+  
+}
+.earth{
+  text-align:center;
+}
+
+.garden{
+  text-align:center;
+}
+.pi{
+  text-align:center;
+ 
+}
+h2{
+  color:#72554F;
+  text-align:center;
+}
+p{
+  text-align:center;
+}
+.project1{
+  float:left;
+  margin:10px;
+}
+.project2{
+  float: right;
+  margin:10px;
+}
+.project3{
+  float:right;
+  margin:10px;
+}
+.project4{
+  position:relative;
+  float:left;
+  margin:20px;
+ top: -50px;
+
+}
+
+.canvas{
+-webkit-animation:move 3s  linear;
+-moz-animation:move 3s linear;
+-o-animation:move 3s  linear;
+-ms-animation:move 3s linear;
+animation:move 3s  linear;
+-webki-transform-style: preserve-3d;
+-moz-transform-style: preserve-3d;
+-o-transform-style: preserve-3d;
+-ms-transform-style: preserve-3d;
+transform-style: preserve-3d;
+}
+@-webkit-keyframes move{
+0%{
+-webkit-transform:rotateY(0) rotatex(0);}
+50%{-webkit-transform:rotateY(90deg) rotateX(90deg);}
+100%{-webkit-transform:rotateY(-360deg) rotatex(360deg);}
+}
+@-moz-keyframes move{
+0%{transform:rotateY(0) rotatex(0);}
+50%{transform:rotateY(90deg) rotateX(90deg);}
+100%{transform:rotateY(-360deg) rotatex(360deg);}
+}
+@-o-keyframes move {
+0%{transform:rotateY(0) rotatex(0);}
+50%{transform:rotateY(90deg) rotateX(90deg);}
+100%{transform:rotateY(-360deg) rotatex(360deg);}
+}
+@-ms-keyframes move{
+0%{transform:rotateY(0) rotatex(0);}
+50%{transform:rotateY(90deg) rotateX(90deg);}
+100%{transform:rotateY(-360deg) rotatex(360deg);}
+}
+@keyframes move{
+0%{transform:rotateY(0) rotatex(0);}
+50%{transform:rotateY(90deg) rotateX(90deg);}
+100%{transform:rotateY(-360deg) rotatex(360deg);}
+}
+div.absolute {
+  position: absolute;
+  z-index:-1;
+  top: 80px;
+  right: 0;
+  width: 200px;
+  height: 1px;
+}
